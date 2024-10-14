@@ -1,21 +1,76 @@
 body {
-  background-color: white;
+  background-color: black;
 
   font-family: "Inter", sans-serif;
 }
 h1 {
-  color: black;
+  font-size: 7rem;
+  color: white;
   text-align: center;
-  border: 1x solid black;
+  padding: 20vh 2rem 0vh 2rem;
+}
+h2 {
+  font-size: 5rem;
+  color: white;
 }
 .container {
   width: auto;
-  padding: 400px;
-}
-.container2
-{
-
+  padding: 1vh 2rem 30vh 2rem;
 }
 p {
   color: red;
+}
+.text {
+  color: white;
+  text-align: center;
+  padding: 200px;
+}
+.typertext {
+  color: white;
+  text-align: center;
+}
+.test {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-style: bold;
+}
+.image-container {
+  width: 100%;
+  display: flex; /* Gör att bilderna placeras bredvid varandra */
+  justify-content: space-between; /* Sprider ut dem med jämn mellanrum, eller använd 'center' om du vill ha centrerade bilder */
+}
+.image img:hover {
+  filter: brightness(
+    60%
+  ); /* Gör bilden mörkare genom att minska ljusstyrkan till 70% */
+  cursor: pointer; /* Ändrar muspekaren till en hand för att indikera att bilden är klickbar */
+  transition: 0.5s ease; /* Smidig övergångseffekt när bilden ändras */
+}
+
+.table {
+  padding: 15vh 6rem 15vh 6rem;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.cell1 {
+  color: white;
+  flex: 1 1 0;
+  padding: 30px;
+  box-sizing: border-box; /* Ser till att padding inte påverkar bredden */
+  border: 1px solid white; /* Lägger till kantlinje runt varje cell */
+}
+.cell {
+  color: white;
+  flex: 3 1 0;
+  width: 70%;
+  padding: 30px;
+  box-sizing: border-box; /* Ser till att padding inte påverkar bredden */
+  border: 1px solid white; /* Lägger till kantlinje runt varje cell */
 }
